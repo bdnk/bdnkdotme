@@ -1,0 +1,33 @@
+
+body{
+	background: url("/assets/background.jpg");
+	background-size: 100%;
+}
+
+.content{
+	height: cover; 
+	width: cover;
+	vertical-align: center;
+}
+
+.center{
+	width: 100%;
+	height: 100%;
+	padding: 0px auto;
+}
+
+.frame{
+	display: table;
+	padding-top: 200px;
+	margin: auto;
+}
+
+.center_text{
+	font-size: 100px;
+	font-family: Roboto;
+	font-weight: 100;
+	color: #343434;
+	/*color: white;*/
+	background-color: rgba(255,255,255,.7);
+	/*background-color: rgba(0,0,0,.7);*/
+}
