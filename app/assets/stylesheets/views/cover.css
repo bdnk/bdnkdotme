@@ -35,5 +35,8 @@ body{
 	font-family: Roboto;
 	font-weight: 100;
 	color: #343434;
+}
+
+.frosted-back{
 	background-color: rgba(255,255,255,.7);
 }
