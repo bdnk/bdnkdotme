@@ -14,25 +14,30 @@
 
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,100,500");
 
-.header{
-	text-align: center;
-	vertical-align: top;
-}
-
-.footer{
-	font-family: Roboto;
-	text-align: center;
-	vertical-align: bottom;
-	position: absolute;
-	padding: 6px 0px;
-	width: 100%;
-	bottom: 0px;
+html{
+	height: 100%;
 }
 
 body{
-	position:absolute;
+	font-family: Roboto;
+	display: table;
 	margin: 0px;
     width:100%;
     height: 100%;
-    bottom:0px;
 }
+
+.header{
+	text-align: center;
+	vertical-align: top;
+	height: 2em;
+}
+
+.footer{
+	height: 2em;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	vertical-align: bottom;
+	width: 100%;
+}
+
