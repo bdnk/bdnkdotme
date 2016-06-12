@@ -1,0 +1,120 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #4A4A4A;
+}
+
+.backsplash{
+  background-color: #FFDE00;
+  width: 100%;
+  height: 600px;
+}
+
+h1{
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h2{
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+body{
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.jumbotron{
+  padding-top: 200px;
+}
+
+.titletext{
+  font-size: 65px;
+  margin: 0;
+  margin-left: 70px;
+}
+
+.titletext.big{
+  font-size: 85px;
+}
+
+.hcenter{
+  margin: auto;
+}
+
+.vcenter{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.decoration{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cover-fab{
+  position: relative;
+  overflow: auto;
+  top:-25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background: white;
+}
+
+.action-text{
+  margin: 16px;
+}
+
+.cntr-img{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.square-card{
+  height: 275px;
+}
+
+.color-primary{
+  background-color: #FFDE00;
+}
+
+.main > .mdl-grid{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 50px;
+}
+
+.card-profilephoto{
+  background-image: url(/assets/images/me.jpg);
+  background-size: cover;
+}
+
+.card-profilephoto > .mdl-card__title-text{
+  color: white;
+  background: rgba(0,0,0,0.2);
+  padding: 0 8px;
+}
+
+.circular{
+  border-radius: 50%;
+}
+
+.icon-bgd{
+  background-color: rgb(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer{
+
+}
