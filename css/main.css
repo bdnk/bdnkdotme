@@ -186,3 +186,14 @@ body{
 .t-markdown a:active{
   color: inherit;
 }
+
+.c-fab{
+  background-color: #00BCD4;
+}
+
+.c-fab--corner{
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 5;
+}
