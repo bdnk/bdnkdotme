@@ -18,6 +18,8 @@ body{
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #FFDE00;
+  position: relative;
+  top: -1px;
 }
 
 h1{
@@ -95,6 +97,11 @@ body{
   background-position: center center;
 }
 
+.card--coverphoto{
+  background-size: cover;
+  background-position: center center;
+}
+
 .circular{
   border-radius: 50%;
 }
@@ -132,6 +139,7 @@ body{
 
 .c-article .mdl-card{
   padding: 80px 0;
+  min-height: 640px;
 }
 
 .c-card__content{
@@ -196,4 +204,15 @@ body{
   bottom: 15px;
   right: 10px;
   z-index: 5;
+}
+
+/*ATOMS*/
+.a-mrgn-25{
+
+}
+
+@media only screen AND (max-width: 736px) {
+  .a-desktoponly{
+    display: none; // doesn't display in the browser.
+  }
 }
