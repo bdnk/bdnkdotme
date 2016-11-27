@@ -37,7 +37,7 @@ body{
 }
 
 .jumbotron{
-  padding-top: 200px;
+  padding-top: 285px;
 }
 
 .titletext{
@@ -87,7 +87,7 @@ body{
   background-color: #FFDE00;
 }
 
-.mdl-card{
+.mdl-card--square{
   min-height: 360px;
 }
 
@@ -169,6 +169,10 @@ body{
   height: auto;
 }
 
+.c-card__tags{
+  padding: 0 16px 0 16px;
+}
+
 .c-card__meta-date{
 
 }
@@ -206,13 +210,38 @@ body{
   z-index: 5;
 }
 
+.c-section-header{
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  color: white;
+  font-size: 24px;
+  margin: 16px 0 0 16px;
+}
+
 /*ATOMS*/
 .a-mrgn-25{
 
 }
 
+/*ALTERATIONS*/
 @media only screen AND (max-width: 736px) {
   .a-desktoponly{
     display: none; // doesn't display in the browser.
   }
+}
+
+/*MDL OVERRIDES*/
+.mdl-layout__header-row{
+  height: 64px;
+}
+
+.mdl-card__media{
+  background-color: inherit;
+}
+
+.mdl-card__title{
+  padding-top: 24px;
+}
+
+.mdl-card__supporting-text{
+  padding-bottom: 24px;
 }
