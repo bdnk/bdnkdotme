@@ -1,14 +1,23 @@
-.l-jumbotron{
-  padding-top: 285px;
-}
-
+/*COMPONENTS ------------------------------*/
 .c-titletext{
-  font-size: 50px;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
   margin: 0;
-  margin-left: 10px;
+  margin-left: 13px;
+  line-height: 1.00;
 }
 
 .c-titletext--big{
-  font-size: 85px;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 65px;
+  margin-left: 10px;
   line-height: 1.00;
+}
+
+
+/*LAYOUT ----------------------------------*/
+.l-jumbotron{
+  padding-top: 250px;
 }
