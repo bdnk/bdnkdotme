@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bdnk.me - Site Teardown</title>
+
+    <!-- MDL -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-teal.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/common.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/_article.css" media="screen" title="no title" charset="utf-8">
+
+    <!--  Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:700,500' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    <div class="mdl-layout__container">
+      <div class="mdl-layout mdl-js-layout c-article">
+        <div class="c-back">
+          <a href="/index.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" title="Go Back">
+            <i class="material-icons">arrow_back</i>
+          </a>
+        </div>
+        <div class="c-article__ribbon"></div>
+        <img class="l-backsplash__decoration" src="/assets/images/Decoration.png" alt="" width="447" height="281" />
+        <main class="c-post mdl-layout__content">
+          <div class="mdl-grid">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="c-card__content">
+                <div class="mdl-card__title">
+                  <h1 class="mdl-card__title-text">bdnk.me</h1>
+                </div>
+                <div class="mdl-card__supporting-text c-card__meta">
+                  <div class="c-card__meta-date ">
+                    November 27th, 2016
+                  </div>
+                  <div class="c-card__meta-spacer"></div>
+                  <div class="c-card__meta-tags">
+                    <span class="mdl-chip">
+                      <span class="mdl-chip__text">Site Teardown</span>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="mdl-card__supporting-text t-markdown">
+                  <h1>Purpose</h1>
+                  <p>
+                    The main goal of this project was to create a showcase for my past work. Until now, most of my visual work had been hosted on Behance (link), but I wanted a platform that I had developed myself, to be able to showcase more of my non-visual work while demonstrating actual implementation first-hand.
+                  </p>
+
+                  <h1>Concept</h1>
+                  <p>
+                    The initial design concept focuses on a burst of bright color and bold text to engage the reader, which transitions into a clean, simple summary of the site’s content. I’m a big proponent of Material Design concepts, so I used that as the basis for the rest of the site’s language, specifically its use of cards, and the responsive grid. Using Sketch to prototype what I wanted to accomplish, I developed the following vector graphics.
+                  </p>
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--8-col">
+                      <img src="/assets/images/bdnk-sketch-desktop.png" alt="" width="100%">
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                      <img src="/assets/images/bdnk-sketch-mobile.png" alt="" width="100%">
+                    </div>
+                  </div>
+
+                  <h1>Material Design Lite</h1>
+                  <p>
+                    To get the site up and running quickly, I wanted to use a CSS framework that would take out some of the gruntwork. With Material Design in mind, I decided to make use of a framework that focuses on Material. I’ve looked into Polymer in the past, but decided to go for a simpler implementation, so I chose MDL, aka <a href="https://getmdl.io/">Material Design Lite</a>.
+                  </p>
+                  <p>
+                    MDL provides a library of CSS components that cover the bulk of the standard Material elements, from the grid, to cards, to layouts, etc. These components organized using BEM, which stands for Block-Element-Modifier, a naming scheme for CSS classes that helps to keep style files from turning into a jumble of unintelligible names and keeps things DRY. MDL is a fully responsive framework, which was important as I wanted the page to be easily viewable from mobile devices in addition to the desktop.                   </p>
+
+                  <h1>Implementation</h1>
+                  <p>
+                    The actual structure of the site is quite simple, with a single landing page, branching into the various pages that make up the site, as well as various links to my content on other sites. I wanted to limit the clutter of the page, keeping things as clean and simple as possible, which meant avoiding things like menus, pagination, and complex javascript pieces like carousels or twitter feeds.
+                  </p>
+                  <p>
+                    Midway through developing this page, I read an interesting Medium article on CSS organization by Mina Markham <a href="https://medium.com/git-out-the-vote/pantsuit-the-hillary-clinton-ui-pattern-library-238e9bf06b54#.gzrh3wxqh">about the making of Pantsuit</a>, the UI pattern library used by the Clinton 2016 campaign. Part of the article covered the modular architecture in Pantsuit, which is based on the ITCSS and namespacing scheme’s laid out by Harry Roberts. Essentially, Pantsuit breaks its CSS classes into ‘types’, which makes it easier for a developer to see the scope and function of a class, at a glance, by ‘namespacing’ it with a prefix. For my purposes, I adapted the Pantsuit namespace model into the following system:
+                  </p>
+                  <ul>
+                    <li>.a-  //Alterations, specific and highly-reusable styling overrides (e.g. vertical center) </li>
+                    <li>.c-  //Components, the building blocks of the site</li>
+                    <li>.l-  //Layouts, purely visual stylings</li>
+                    <li>.t-  //Themes, context specific stylings (e.g. for an article, containing specific markdown)</li>
+                  </ul>
+
+                  <h1>Future Work</h1>
+                  <p>
+                    There still is a lot of work to do on this site, and I will be constantly upgrading and improving it as I continue to learn new techniques and work on new projects. I plan to rework the site using Sass preprocessing, and hopefully move away from MDL to develop my own component library from scratch. Stay tuned!
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="mdl-mini-footer">
+            <img class="a-hcenter" src="/assets/images/icons/logo_vertical_black.png" alt="bdnk logo" width="75" height="75" />
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
