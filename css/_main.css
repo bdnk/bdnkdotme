@@ -1,0 +1,14 @@
+.l-jumbotron{
+  padding-top: 285px;
+}
+
+.c-titletext{
+  font-size: 50px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.c-titletext--big{
+  font-size: 85px;
+  line-height: 1.00;
+}

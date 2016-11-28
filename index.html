@@ -26,7 +26,8 @@
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/common.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/_main.css" media="screen" title="no title" charset="utf-8">
 
     <!--  Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -36,26 +37,26 @@
   </head>
 
   <body>
-    <div class="backsplash mdl-layout ">
-      <img class="decoration" src="assets/images/Decoration.png" alt="" width="447" height="281" />
-      <div class="mdl-layout__content vcenter">
-        <div class="jumbotron">
-          <h2 class="titletext">
+    <div class="l-backsplash mdl-layout ">
+      <img class="l-backsplash__decoration" src="assets/images/Decoration.png" alt="" width="447" height="281" />
+      <div class="mdl-layout__content a-vcenter">
+        <div class="l-jumbotron">
+          <h2 class="c-titletext">
             AT THE CORNER OF ENGINEERING AND
           </h2>
-          <h1 class="titletext big">
+          <h1 class="c-titletext--big">
             DESIGN
           </h1>
         </div>
       </div>
     </div>
-    <div class="backsplash__arrow"></div>
+    <div class="l-backsplash__arrow"></div>
 
-    <div class="main">
+    <div class="l-main">
       <div class="mdl-grid">
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-card--square">
-          <div class="mdl-card__title mdl-card--expand vcenter">
-            <img src="/assets/images/me.jpg" class="circular" alt="Me" width="200px" height="200px" />
+        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop c-card--square">
+          <div class="mdl-card__title mdl-card--expand a-vcenter">
+            <img src="/assets/images/me.jpg" class="c-img--circular" alt="Me" width="200px" height="200px" />
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <a href="https://ca.linkedin.com/in/brendan-keyworth-7b415285" class="mdl-button mdl-js-button mdl-js-ripple-effect" >
@@ -64,46 +65,46 @@
             <img src="assets/images/icons/linkedin-icon.svg" width="15px" />
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop color-primary mdl-card--square">
-          <div class="mdl-card__media mdl-card--expand square-card vcenter">
+        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
+          <div class="mdl-card__media mdl-card--expand a-vcenter">
             <a href="https://github.com/bdnk">
-              <img src="assets/images/icons/github-icon.svg" alt="Github Logo" width="160" height="auto" class="cntr-img" />
+              <img src="assets/images/icons/github-icon.svg" alt="Github Logo" width="160" height="auto" class="a-cntr-img" />
             </a>
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <a href="https://github.com/bdnk" class="mdl-button mdl-js-button mdl-js-ripple-effect">VIEW GITHUB PROJECTS</a>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop color-primary mdl-card--square">
-          <div class="mdl-card__media mdl-card--expand square-card vcenter">
+        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
+          <div class="mdl-card__media mdl-card--expand a-vcenter">
             <a href="http://brendanjkeyworth.myportfolio.com/">
-              <img src="assets/images/icons/behance-icon.svg" alt="Behance Logo" width="160" height="auto" class="cntr-img" />
+              <img src="assets/images/icons/behance-icon.svg" alt="Behance Logo" width="160" height="auto" class="a-cntr-img" />
             </a>
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <a href="http://brendanjkeyworth.myportfolio.com/" class="mdl-button mdl-js-button mdl-js-ripple-effect">VIEW BEHANCE GALLERY</a>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop color-primary mdl-card--square">
-          <div class="mdl-card__media mdl-card--expand square-card vcenter">
+        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
+          <div class="mdl-card__media mdl-card--expand a-vcenter">
             <a href="https://medium.com/@bdnk">
-              <img src="assets/images/icons/medium-icon.svg" alt="Medium Logo" width="160" height="auto" class="cntr-img" />
+              <img src="assets/images/icons/medium-icon.svg" alt="Medium Logo" width="160" height="auto" class="a-cntr-img" />
             </a>
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <a href="https://medium.com/@bdnk" class="mdl-button mdl-js-button mdl-js-ripple-effect">FOLLOW ME ON MEDIUM</a>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-card--square">
+        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
           <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Branding: AlphaWolfSquadron</h2>
           </div>
-          <a href="alphawolfsquadron.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid card--awsphoto"></a>
+          <a href="alphawolfsquadron.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid c-card--coverphoto" style="background-image: url(/assets/images/aws-bgd.png);"></a>
           <div class="mdl-card__actions mdl-card--border">
             <a href="alphawolfsquadron.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">SEE MORE</a>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-card--square">
+        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
           <div class="mdl-card__title">
             <h1 class="mdl-card__title-text">‘Overthinking It’: Mentorship doesn’t have to be scary</h3>
           </div>
@@ -122,44 +123,47 @@
             <img src="/assets/images/icons/medium-icon.svg" alt="" width="15px"/>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop color-primary mdl-card--square">
-          <div class="mdl-card__media mdl-card--expand square-card vcenter">
+        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
+          <div class="mdl-card__media mdl-card--expand a-vcenter">
             <a href="mailto:hey@bdnk.com">
-              <img src="assets/images/icons/contact-icon.svg" alt="Contact Me" width="160" height="auto" class="cntr-img" />
+              <img src="assets/images/icons/contact-icon.svg" alt="Contact Me" width="160" height="auto" class="a-cntr-img" />
             </a>
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <a href="mailto:hey@bdnk.com" class="mdl-button mdl-js-button mdl-js-ripple-effect">CONTACT ME</a>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop color-primary mdl-card--square">
-          <div class="mdl-card__media mdl-card--expand square-card vcenter">
+        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
+          <div class="mdl-card__media mdl-card--expand a-vcenter">
             <a href="community.html">
-              <img src="assets/images/icons/heart-icon.svg" alt="Community Involvement" width="160" height="auto" class="cntr-img" />
+              <img src="assets/images/icons/heart-icon.svg" alt="Community Involvement" width="160" height="auto" class="a-cntr-img" />
             </a>
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <a href="community.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">Community Involvement</a>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-card--square">
+        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
           <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">UX Study: Jay</h2>
           </div>
-          <a href="jay-ui.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid card--coverphoto" style="background-image: url(/assets/images/jay-workspace.png);"></a>
+          <a href="jay-ui.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid c-card--coverphoto" style="background-image: url(/assets/images/jay-workspace.png);"></a>
           <div class="mdl-card__actions mdl-card--border">
             <a href="jay-ui.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
           </div>
         </div>
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-card--square">
+        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
           <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Brand Study: LetsGrow</h2>
           </div>
-          <a href="letsgrow.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid card--coverphoto" style="background-image: url(/assets/images/lg-logo-color.png);"></a>
+          <a href="letsgrow.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid c-card--coverphoto" style="background-image: url(/assets/images/lg-logo-color.png);"></a>
           <div class="mdl-card__actions mdl-card--border">
             <a href="letsgrow.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
           </div>
         </div>
+
+        <!-- TODO: Add Resume link -->
+        <!-- TODO: Add Twitter link -->
       </div>
     </div>
 
@@ -168,7 +172,7 @@
     </a>
 
     <footer class="mdl-mini-footer">
-      <img class="hcenter" src="assets/images/icons/logo_vertical_black.png" alt="bdnk logo" width="75" height="75" />
+      <img class="a-hcenter" src="assets/images/icons/logo_vertical_black.png" alt="bdnk logo" width="75" height="75" />
     </footer>
   </body>
 

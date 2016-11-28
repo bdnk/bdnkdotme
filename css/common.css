@@ -1,0 +1,171 @@
+/*PRIMARIES ----------------------------------------------------*/
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #4A4A4A;
+}
+
+h1{
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h2{
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+body{
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+/*STYLES ----------------------------------------------------*/
+
+.a-hcenter{
+  margin: auto;
+}
+
+.a-vcenter{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.a-cntr-img{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.a-color-primary{
+  background-color: #FFDE00;
+}
+
+.a-vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen AND (max-width: 736px) {
+  .a-desktoponly{
+    display: none; // doesn't display in the browser.
+  }
+}
+
+/*COMPONENTS ----------------------------------------------------*/
+
+.c-img--circular{
+  border-radius: 50%;
+}
+
+.c-card--coverphoto{
+  background-size: cover;
+  background-position: center center;
+}
+
+.c-back{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 9999;
+}
+
+.c-card__content{
+  max-width: 740px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.c-card--square{
+  min-height: 360px;
+}
+
+.c-card__meta{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.c-card__tags{
+  padding: 0 16px 0 16px;
+}
+
+.c-card__meta-spacer{
+  flex-grow: 1;
+}
+
+.c-fab{
+  background-color: #00BCD4;
+}
+
+.c-fab--corner{
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 5;
+}
+
+.c-section-header{
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  color: white;
+  font-size: 24px;
+  margin: 16px 0 0 16px;
+}
+
+
+/*LAYOUTS ----------------------------------------------------*/
+
+.l-main{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.l-backsplash{
+  background-color: #FFDE00;
+  width: 100%;
+  height: 95%;
+}
+
+.l-backsplash__arrow{
+  z-index: -1;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FFDE00;
+  position: relative;
+  top: -1px;
+}
+
+.l-backsplash__decoration{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/*THEMES ----------------------------------------------------*/
+
+
+/*MDL OVERRIDES ----------------------------------------------------*/
+
+.mdl-layout__header-row{
+  height: 64px;
+}
+
+.mdl-card__media{
+  background-color: inherit;
+}
+
+.mdl-card__title{
+  padding-top: 24px;
+}
+
+.mdl-card__supporting-text{
+  padding-bottom: 24px;
+}
