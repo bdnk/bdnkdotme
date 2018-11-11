@@ -6,17 +6,17 @@ body{
 }
 
 h1{
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: bold;
 }
 
 h2{
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: bold;
 }
 
 body{
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 /*ALTERATIONS ----------------------------------------------------*/
@@ -110,7 +110,7 @@ body{
 }
 
 .c-section-header{
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   color: white;
   font-size: 24px;
   margin: 16px 0 0 16px;

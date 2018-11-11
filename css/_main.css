@@ -1,6 +1,6 @@
 /*COMPONENTS ------------------------------*/
 .c-titletext{
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 40px;
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 .c-titletext--big{
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 65px;
   margin-left: 10px;
