@@ -50,7 +50,7 @@ body{
 
 @media only screen AND (max-width: 736px) {
   .a-desktoponly{
-    display: none; // doesn't display in the browser.
+    display: none; /* doesn't display in the browser. */
   }
 }
 
