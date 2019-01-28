@@ -27,6 +27,19 @@ body{
   flex-direction: column;
 }
 
+
+/* BUTTONS ----------------------------------------------------*/
+.a-button{
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-transform: initial;
+}
+
+.a-button--secondary{
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+
 /*ALTERATIONS ----------------------------------------------------*/
 
 .a-hcenter{
@@ -95,8 +108,8 @@ body{
   flex-grow: 1;
 }
 
-.c-fab{
-  background-color: #00BCD4;
+.c-fab:hover{
+  background-color: #FBBF00;
 }
 
 .c-fab--corner{
