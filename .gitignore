@@ -24,3 +24,5 @@ firebase.json
 .DS_Store
 assets/.DS_Store
 assets/images/.DS_Store
+firebase-debug.log
+.firebase/hosting..cache
