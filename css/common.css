@@ -30,6 +30,9 @@ body{
 
 /* BUTTONS ----------------------------------------------------*/
 .a-button{
+  display: flex;
+  align-items: center;
+
   font-family: "Montserrat", Helvetica, sans-serif;
   text-transform: initial;
 }
