@@ -1,23 +1,42 @@
 /*COMPONENTS ------------------------------*/
-.c-titletext{
-  font-family: "Montserrat", Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  margin: 0;
-  margin-left: 13px;
-  line-height: 1.00;
+.c-jumbotron{
+  padding: 24px 48px;
+  flex: 1;
 }
 
-.c-titletext--big{
-  font-family: "Montserrat", Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 65px;
-  margin-left: 10px;
-  line-height: 1.00;
-}
+  .c-jumbotron .c-jumbotron__grid{
+    display: grid;
+    height: 100%;
+    grid-template: auto / 2fr 1fr;
+    grid-gap: 24px;
+  }
 
+  .c-jumbotron__text{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    line-height: 1.25;
+  }
+    .c-jumbotron__text.c-jumbotron__text--title{
+      font-size: 64px;
+    }
+    .c-jumbotron__text.c-jumbotron__text--description{
+      font-family: "Open Sans", Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 24px 20% 32px 0;
+    }
 
-/*LAYOUT ----------------------------------*/
-.l-jumbotron{
-  padding-top: 250px;
-}
+  .c-jumbotron .c-jumbotron__button{
+    height: 72px;
+    padding: 0 36px;
+    align-self: flex-start;
+
+    background: #333;
+    color: #FBBF00;
+
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: initial;
+  }
