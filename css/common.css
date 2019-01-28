@@ -19,16 +19,18 @@ body{
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
+/* CONTAINERS ----------------------------------------------------*/
+
+.a-vcontainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /*ALTERATIONS ----------------------------------------------------*/
 
 .a-hcenter{
   margin: auto;
-}
-
-.a-vcenter{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .a-cntr-img{
@@ -42,11 +44,6 @@ body{
   background-color: #fbbf00;
 }
 
-.a-vertical{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 @media only screen AND (max-width: 736px) {
   .a-desktoponly{
