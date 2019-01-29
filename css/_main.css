@@ -1,12 +1,13 @@
 /*COMPONENTS ------------------------------*/
 .c-jumbotron{
   padding: 24px 0 24px 24px;
+  display: flex;
   flex: 1;
 }
 
   .c-jumbotron .c-jumbotron__grid{
     display: grid;
-    height: 100%;
+    flex: 1;
     grid-template: auto / 2fr 1fr;
     grid-gap: 24px;
   }
