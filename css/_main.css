@@ -1,6 +1,6 @@
 /*COMPONENTS ------------------------------*/
 .c-jumbotron{
-  padding: 24px 48px;
+  padding: 24px 0 24px 24px;
   flex: 1;
 }
 
@@ -9,6 +9,11 @@
     height: 100%;
     grid-template: auto / 2fr 1fr;
     grid-gap: 24px;
+  }
+
+  .c-jumbotron__content{
+    margin-left: 56px;
+    margin-bottom: 48px;
   }
 
   .c-jumbotron__text{
@@ -40,17 +45,48 @@
     text-transform: initial;
   }
 
+  .c-jumbotron__decoration{
+    overflow: hidden;
+    background-image: url("/assets/images/bdnklogo-hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 
-@media only screen AND (max-width: 956px) {
-  .l-backsplash__decoration{
-    display: none;
+
+@media only screen AND (max-width: 800px) {
+  .c-jumbotron__content{
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
 @media only screen AND (max-width: 564px) {
   .c-jumbotron{
     padding: 24px;
+  }
+
+  .c-jumbotron__content{
+    z-index: 0;
+  }
+
+  .c-jumbotron:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: -8% 0;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/bdnklogo-hero.svg");
+    opacity: .2;
+    z-index: 0;
+  }
+
+  .c-jumbotron__decoration{
+    display: none;
   }
 
   .c-jumbotron .c-jumbotron__text.c-jumbotron__text--description{
