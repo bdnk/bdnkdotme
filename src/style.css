@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #0E1111;
+  }
+
+  body {
+    background-color: #0E1111;
+    color: #F3F4F6;
+    font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    selection-background-color: #34D399;
+    selection-color: #0E1111;
+  }
+
+  ::selection {
+    background-color: #34D399;
+    color: #0E1111;
+  }
+}
+
+/* Subtle background mesh and grain */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(35, 43, 43, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(35, 43, 43, 0.25) 1px, transparent 1px);
+}
+
+/* Project Card: Permanent green border with layered emerald drop-glow on hover */
+.project-card {
+  position: relative;
+  border-color: rgba(52, 211, 153, 0.35);
+  box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.6), 0 0 18px -4px rgba(52, 211, 153, 0.07);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover {
+  border-color: rgba(52, 211, 153, 0.75);
+  box-shadow: 
+    0 16px 40px -8px rgba(0, 0, 0, 0.8),
+    0 0 35px -2px rgba(52, 211, 153, 0.18),
+    0 0 70px 4px rgba(52, 211, 153, 0.08);
+  transform: translateY(-2px);
+}

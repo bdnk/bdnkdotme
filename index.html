@@ -1,219 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="dark">
   <head>
-    <meta charset="utf-8">
-    <title>bdnk</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brendan Keyworth — Senior UI Engineer</title>
+    <meta name="description" content="Brendan Keyworth is a Senior UI Engineer based in Ottawa, ON, specializing in modern web applications, design systems, and frontend ergonomics." />
+    <meta name="theme-color" content="#0E1111" />
 
-    <!-- SEO -->
-    <meta name="description" content="Brendan Keyworth is a designer and software developer. This is his personal website and portfolio.">
-    <meta name="keywords" content="HTML,CSS,UI,UX,Software,Developer">
-    <meta name="author" content="Brendan Keyworth">
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bdnk.design/" />
+    <meta property="og:title" content="Brendan Keyworth — Senior UI Engineer" />
+    <meta property="og:description" content="Specializing in modern web applications, design systems, and frontend ergonomics." />
+    <meta property="twitter:card" content="summary_large_image" />
 
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Brendan Keyworth"/>
-    <meta property="og:url" content="bdnk.me">
-    <meta property="og:title" content="bdnk">
-    <meta property="og:description" content="Brendan Keyworth is a designer and software developer. This is his personal website and portfolio.">
-    <meta property="og:image" content="http://bdnk.me/assets/images/Thumbnail.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-
-
-    <!-- MDL -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-teal.min.css">
-    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/common.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/css/_main.css" media="screen" title="no title" charset="utf-8">
-
-    <!--  Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,500" rel="stylesheet">
-
-
+    <!-- Google Fonts: Instrument Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <body class="bg-canvas text-textPrimary min-h-screen relative overflow-x-hidden selection:bg-accent selection:text-canvas">
+    <!-- Ambient subtle background grid -->
+    <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0"></div>
 
-  <body>
-    <div class="l-backsplash mdl-layout">
-      <div class="mdl-layout__content a-vcontainer">
-        <div class="c-jumbotron">
-          <div class="c-jumbotron__grid">
-
-            <div class="a-vcontainer c-jumbotron__content" style="justify-content: flex-end;">
-              <div class="c-jumbotron__text c-jumbotron__text--title">
-                Hey there! I'm Brendan Keyworth
-              </div>
-              
-              <div class="c-jumbotron__text c-jumbotron__text--description">
-                Equal parts user interface designer + front-end engineer. Currently working with Viavi Solutions, in Canada’s
-                Capitol.
-              </div>
-              
-              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised a-button c-jumbotron__button" href="#first">Get to know me <i class="material-icons">keyboard_arrow_down</i></a>
+    <!-- Main Container -->
+    <div class="relative z-10 max-w-6xl mx-auto px-6 sm:px-10 lg:px-12 py-16 sm:py-24 flex flex-col min-h-screen justify-between">
+      
+      <!-- Top / Hero & Header Section -->
+      <main class="space-y-16 sm:space-y-20">
+        
+        <!-- Header & Identity -->
+        <header class="space-y-6">
+          <!-- Top Row: Badge & Location/Status -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+            <!-- Role Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/25 text-accent font-mono text-xs tracking-tight font-medium shadow-sm shadow-accent/5">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
+              Senior UI Engineer
             </div>
 
-            <div class="c-jumbotron__decoration">
-              <!-- logo -->
+            <!-- Location & Current Status -->
+            <div class="flex items-center gap-2 text-xs sm:text-sm text-textMuted font-mono">
+              <span>Ottawa, ON</span>
+              <span class="text-borderSubtle">•</span>
+              <span class="inline-flex items-center gap-1.5 text-textPrimary/90">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                Currently at VIAVI Solutions
+              </span>
             </div>
           </div>
-          
-        </div>
-      </div>
-    </div>
-    <div class="l-backsplash__arrow"></div>
 
-    <div class="l-main">
-      <div class="mdl-grid">
-        <div id="first" class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop c-card--square">
-          <div class="mdl-card__title mdl-card--expand a-vcontainer">
-            <a href="https://ca.linkedin.com/in/brendan-keyworth">
-              <img src="/assets/images/me.jpg" class="c-img--circular" alt="Me" width="200px" height="200px" />
-            </a>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="https://ca.linkedin.com/in/brendan-keyworth" class="mdl-button mdl-js-button mdl-js-ripple-effect" >
-              BRENDAN KEYWORTH
-            </a>
-            <img src="assets/images/icons/linkedin-icon.svg" width="15px" />
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
-          <div class="mdl-card__media mdl-card--expand a-vcontainer">
-            <a href="https://github.com/bdnk">
-              <img src="assets/images/icons/github-icon.svg" alt="Github Logo" width="160" height="auto" class="a-cntr-img" />
-            </a>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="https://github.com/bdnk" class="mdl-button mdl-js-button mdl-js-ripple-effect">VIEW GITHUB PROJECTS <i class="material-icons">launch</i></a>
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
-          <div class="mdl-card__media mdl-card--expand a-vcontainer">
-            <a href="https://docs.google.com/document/d/1CCZVLsqIQmEqjfxUrRkfypUZYkr5VEa6BfouW6cX9_c">
-              <img src="assets/images/icons/doc-icon.svg" alt="Resume" width="160" height="auto" class="a-cntr-img" />
-            </a>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="https://docs.google.com/document/d/1CCZVLsqIQmEqjfxUrRkfypUZYkr5VEa6BfouW6cX9_c" class="mdl-button mdl-js-button mdl-js-ripple-effect">VIEW RESUME <i class="material-icons">launch</i></a>
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
-          <div class="mdl-card__media mdl-card--expand a-vcontainer">
-            <a href="/www/community.html">
-              <img src="assets/images/icons/heart-icon.svg" alt="Community Involvement" width="160" height="auto" class="a-cntr-img" />
-            </a>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="/www/community.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">Community Involvement</a>
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Site Teardown: bdnk.me</h2>
-          </div>
-          <a href="/www/bdnkdotme-teardown.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid c-card--coverphoto" style="background-image: url(/assets/images/bdnk-sketch-desktop.png); "></a>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="/www/bdnkdotme-teardown.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">UX Study: Jay</h2>
-          </div>
-          <a href="/www/jay-ui.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid c-card--coverphoto" style="background-image: url(/assets/images/jay-workspace.png);"></a>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="/www/jay-ui.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
-          <div class="mdl-card__media mdl-card--expand a-vcontainer">
-            <a href="https://twitter.com/bdnk__">
-              <img src="assets/images/icons/twitter-icon.svg" alt="Resume" width="160" height="auto" class="a-cntr-img" />
-            </a>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="https://twitter.com/bdnk__" class="mdl-button mdl-js-button mdl-js-ripple-effect">FOLLOW ME ON TWITTER <i class="material-icons">launch</i></a>
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
-          <div class="mdl-card__media mdl-card--expand a-vcontainer">
-            <a href="https://medium.com/@bdnk">
-              <img src="assets/images/icons/medium-icon.svg" alt="Medium Logo" width="160" height="auto" class="a-cntr-img" />
-            </a>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="https://medium.com/@bdnk" class="mdl-button mdl-js-button mdl-js-ripple-effect">FOLLOW ME ON MEDIUM <i class="material-icons">launch</i></a>
-          </div>
-        </div>
-
-        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
-          <div class="mdl-card__title">
-            <h1 class="mdl-card__title-text">‘Overthinking It’: Mentorship doesn’t have to be scary</h3>
-          </div>
-          <div class="mdl-card__supporting-text mdl-card--expand">
-            <p>
-              “I don’t want to impose…” We’ve all said, or at least thought, those words at one point or another. Or quite often, if you’re anything like me. There’s something a little broken about the way people have taught themselves that there’s some sort of shame in asking people for things. We never want to be seen an inconvenience, often over minor things.
-            </p>
-            <p>
-              I was told throughout my studies that Mentorship is a key aspect of...
+          <!-- Name & Positioning Statement -->
+          <div class="space-y-4 pt-2">
+            <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight text-textPrimary font-sans">
+              Brendan Keyworth
+            </h1>
+            <p class="text-lg sm:text-xl text-textMuted leading-relaxed max-w-2xl font-sans">
+              Specializing in modern web applications, design systems, and frontend ergonomics.
             </p>
           </div>
-          <div class="mdl-card__actions mdl-card--border ">
-            <a href="https://medium.com/@bdnk/overthinking-it-mentorship-doesn-t-have-to-be-scary-42434ee258fc#.nsvx2bz3y" class="mdl-button mdl-js-button mdl-js-ripple-effect" >
-              READ MORE <i class="material-icons">launch</i>
+
+          <!-- Action Links -->
+          <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-2">
+            <a
+              href="https://www.linkedin.com/in/brendan-keyworth/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center gap-1.5 text-sm font-medium text-textPrimary hover:text-accent transition-colors duration-200"
+            >
+              <span>LinkedIn</span>
+              <svg class="w-3.5 h-3.5 text-textMuted group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+
+            <a
+              href="https://github.com/bdnk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center gap-1.5 text-sm font-medium text-textPrimary hover:text-accent transition-colors duration-200"
+            >
+              <span>GitHub</span>
+              <svg class="w-3.5 h-3.5 text-textMuted group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+
+            <a
+              href="mailto:brendan@bdnk.design"
+              class="group inline-flex items-center gap-1.5 text-sm font-medium text-textPrimary hover:text-accent transition-colors duration-200"
+            >
+              <span>Contact</span>
+              <svg class="w-3.5 h-3.5 text-textMuted group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
             </a>
           </div>
-        </div>
+        </header>
 
-        <div class="mdl-card mdl-cell mdl-cell--8-col c-card--square">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Branding: AlphaWolfSquadron</h2>
-          </div>
-          <a href="/www/alphawolfsquadron.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid c-card--coverphoto" style="background-image: url(/assets/images/aws-bgd.png);"></a>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="/www/alphawolfsquadron.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">SEE MORE</a>
-          </div>
-        </div>
+        <!-- Divider Line -->
+        <hr class="border-borderSubtle/60" />
 
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop a-color-primary c-card--square">
-          <div class="mdl-card__media mdl-card--expand a-vcontainer">
-            <a href="mailto:hey@bdnk.com">
-              <img src="assets/images/icons/contact-icon.svg" alt="Contact Me" width="160" height="auto" class="a-cntr-img" />
+        <!-- Focus & Experience (2-Pillar Core Disciplines) -->
+        <section class="space-y-6">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-textMuted/90 flex items-center gap-2">
+              <span class="text-accent">//</span> Focus &amp; Experience
+            </h2>
+          </div>
+
+          <!-- 2-Card Responsive Grid (Horizontal on desktop, vertical fallback) -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            
+            <!-- Pillar 1: Product Design & Design Systems -->
+            <article class="project-card flex flex-col justify-between p-7 sm:p-8 lg:p-9 rounded-2xl bg-surface border">
+              <div class="space-y-5">
+                <h3 class="text-xl font-semibold text-textPrimary font-sans">
+                  Product Design &amp; Design Systems
+                </h3>
+
+                <p class="text-base text-textMuted leading-relaxed font-sans">
+                  Curating a long-lived UI/UX architecture evolved across 10+ years from Sketch to Figma, establishing unified standards for multi-generation optical test instrumentation.
+                </p>
+
+                <ul class="space-y-3 pt-1 text-sm sm:text-base text-textMuted font-sans leading-relaxed">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-accent text-xs mt-1.5 shrink-0">◆</span>
+                    <span><strong class="font-medium text-textPrimary">Modular Hardware UX:</strong> Designed responsive, customizable widget and dashboard layouts accommodating dozens of hot-swappable hardware modules.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-accent text-xs mt-1.5 shrink-0">◆</span>
+                    <span><strong class="font-medium text-textPrimary">Enterprise Design Tokens:</strong> Contributing to cross-organizational design token standards that balance modern toolchains with legacy product constraints.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-accent text-xs mt-1.5 shrink-0">◆</span>
+                    <span><strong class="font-medium text-textPrimary">Information Architecture:</strong> Translating dense optical telemetry, complex configuration states, and multi-instrument workflows into clear, scannable interfaces.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tools & Domains Tags -->
+              <div class="pt-6 mt-8 border-t border-borderSubtle/60">
+                <div class="text-xs font-mono text-textMuted/70 mb-2.5 uppercase tracking-wider">Tools &amp; Domains</div>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-textMuted/90">
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Figma</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Design Systems</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Design Tokens</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Information Architecture</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Hardware UI/UX</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Responsive Layouts</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pillar 2: Frontend & Application Engineering -->
+            <article class="project-card flex flex-col justify-between p-7 sm:p-8 lg:p-9 rounded-2xl bg-surface border">
+              <div class="space-y-5">
+                <h3 class="text-xl font-semibold text-textPrimary font-sans">
+                  Frontend &amp; Application Engineering
+                </h3>
+
+                <p class="text-base text-textMuted leading-relaxed font-sans">
+                  Building, optimizing, and maintaining production web and desktop clients interfacing with physical optical test hardware and distributed device networks.
+                </p>
+
+                <ul class="space-y-3 pt-1 text-sm sm:text-base text-textMuted font-sans leading-relaxed">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-accent text-xs mt-1.5 shrink-0">◆</span>
+                    <span><strong class="font-medium text-textPrimary">Desktop Fleet Management (MAP Control Center):</strong> Built from scratch using Vue.js 3, Vite, and Electron. Engineered for low latency and high rendering throughput across dense multi-row telemetry tables.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-accent text-xs mt-1.5 shrink-0">◆</span>
+                    <span><strong class="font-medium text-textPrimary">Embedded Web Interface (MAP-300 Dashboard):</strong> Maintaining a self-served AngularJS application with a comprehensive custom SCSS library mirroring core design system components.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-accent text-xs mt-1.5 shrink-0">◆</span>
+                    <span><strong class="font-medium text-textPrimary">Comms &amp; Tooling:</strong> Leveraging WAMP / WebSocket subprotocols for real-time hardware communication and Node.js for filesystem and backend utilities.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="pt-6 mt-8 border-t border-borderSubtle/60">
+                <div class="text-xs font-mono text-textMuted/70 mb-2.5 uppercase tracking-wider">Tech Stack</div>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-textMuted/90">
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Vue.js 3</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Electron</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Vite</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">AngularJS</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">SCSS</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">WAMP / WebSockets</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">Node.js</span>
+                  <span class="px-2.5 py-1 rounded-md bg-canvas border border-borderSubtle/80">UI Performance</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Outbound Unified Pills Button Group -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <!-- Primary Pill: VIAVI MAP-300 Product Page -->
+            <a
+              href="https://www.viavisolutions.com/en-us/products/map-300-multiple-application-platform"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-borderSubtle hover:border-accent/60 text-sm font-medium text-textPrimary hover:text-accent transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-accent/5"
+            >
+              <span>Explore VIAVI MAP-300 Platform</span>
+              <svg class="w-3.5 h-3.5 text-textMuted group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+
+            <!-- Secondary Pill: Site GitHub Repo (Icon-only) -->
+            <a
+              href="https://github.com/bdnk/bdnkdotme"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View portfolio source code on GitHub"
+              aria-label="View portfolio source code on GitHub"
+              class="group inline-flex items-center justify-center p-2.5 rounded-full bg-surface border border-borderSubtle hover:border-accent/60 text-textMuted hover:text-accent transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-accent/5"
+            >
+              <svg class="w-4 h-4 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
             </a>
           </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="mailto:hey@bdnk.design" class="mdl-button mdl-js-button mdl-js-ripple-effect">CONTACT ME <i class="material-icons">email</i></a>
-          </div>
-        </div>
 
-        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--4-offset-desktop c-card--square">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Brand Study: LetsGrow</h2>
-          </div>
-          <a href="/www/letsgrow.html" class="mdl-card__supporting-text mdl-card--expand mdl-grid c-card--coverphoto" style="background-image: url(/assets/images/lg-logo-color.png);"></a>
-          <div class="mdl-card__actions mdl-card--border">
-            <a href="/www/letsgrow.html" class="mdl-button mdl-js-button mdl-js-ripple-effect">READ MORE</a>
-          </div>
-        </div>
+      </main>
 
-        <!-- TODO: Add Coming Soon (?) -->
-      </div>
+      <!-- Footer -->
+      <footer class="pt-20 pb-4 text-xs font-mono text-textMuted flex items-center justify-between border-t border-borderSubtle/60 mt-16">
+        <div class="flex items-center gap-2">
+          <span>Ottawa, Ontario</span>
+          <span class="text-borderSubtle">•</span>
+          <span>© <span id="current-year">2026</span> Brendan Keyworth</span>
+        </div>
+      </footer>
+
     </div>
 
-    <footer class="mdl-mini-footer">
-      <a href="https://github.com/bdnk/bdnkdotme" class="mdl-button mdl-js-button mdl-js-ripple-effect a-button a-button--secondary a-hcenter">
-        View the code on GitHub <i class="material-icons">launch</i>
-      </a>
-    </footer>
+    <script type="module" src="/src/main.js"></script>
   </body>
-
 </html>
